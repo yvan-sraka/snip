@@ -1,0 +1,16 @@
+[package]
+name = "snip"
+version = "0.1.0"
+edition = "2021"
+authors = ["Yvan Sraka <yvan@sraka.xyz"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["dylib"]
+#             ~~~~~~~
+#             This will make rustc produce a target/*/libsnip.dylib on macOS
+#                                                     libsnip.so    on Linux
+#                                                     libsnip.dll   on Windows
+#
+#               ... rather than a .rlib (the Rust custom format for crates)

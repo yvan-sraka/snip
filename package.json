@@ -1,0 +1,13 @@
+{
+  "name": "snip",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Yvan Sraka <yvan@sraka.xyz>",
+  "dependencies": {
+    "ffi-napi": "^4.0.3"
+  },
+  "scripts": {
+    "build": "cargo clean ; cargo build",
+    "install": "npm run build"
+  }
+}
